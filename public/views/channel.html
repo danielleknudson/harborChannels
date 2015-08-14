@@ -1,0 +1,13 @@
+<div>
+  <a href="/#/">Back to dashboard</a>
+  <h1>{{ scope.channel }}</h1>
+  <div>
+    <h4>Other agents in this channel: </h4>
+    <ul>
+      <li> {{ scope.thisUser.name }}</li>
+      <li ng-repeat="agent in scope.agents">
+        <span>{{ agent }}</span>
+      </li>
+    </ul>
+  </div>
+</div>

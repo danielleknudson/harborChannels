@@ -4,5 +4,9 @@ harborChannels.config(function ($routeProvider) {
       controller: 'HomeController',
       templateUrl: '../views/home.html',
     })
+    .when('/channel/:channel', {
+      controller: 'ChannelController',
+      templateUrl: '../views/channel.html',
+    })
     .otherwise ({redirectTo: '/'});
 });

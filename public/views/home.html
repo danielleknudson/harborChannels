@@ -1,3 +1,11 @@
 <div>
   <h1>harborChannels</h1>
+  <h3>Activity Booking</h3>
+  <div>
+    <ul>
+      <li ng-repeat="activity in scope.activities" ng-click="scope.goToChannel(activity)">
+        <span>{{ activity }}</span>
+      </li>
+    </ul>
+  </div>
 </div>
