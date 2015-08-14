@@ -1,0 +1,36 @@
+{
+  "name": "harborChannels",
+  "version": "1.0.0",
+  "description": "Interested in an activity? Join a channel to stay up-to-date on activity details and availability.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielleknudson/harborChannels.git"
+  },
+  "author": "danielleknudson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danielleknudson/harborChannels/issues"
+  },
+  "homepage": "https://github.com/danielleknudson/harborChannels#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-shell": "^0.4.2",
+    "nodemon": "^1.4.0"
+  },
+  "dependencies": {
+    "angular": "^1.4.3",
+    "angular-animate": "^1.4.3",
+    "angular-aria": "^1.4.3",
+    "angular-material": "^0.10.1",
+    "angular-route": "^1.4.3",
+    "body-parser": "^1.13.3",
+    "express": "^4.13.3",
+    "express-partials": "^0.3.0",
+    "request": "^2.60.0"
+  }
+}
