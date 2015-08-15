@@ -10,6 +10,7 @@ harborChannels.controller('HomeController', ['$scope', '$location', function ($s
     'surfing',
     'snorkeling',
     'kayaking',
+    'whale watching',
   ];
   $scope.scope.goToChannel = function (channel) {
     $location.url('/channel/' + channel);

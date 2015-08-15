@@ -1,10 +1,9 @@
-<div>
-  <h1>harborChannels</h1>
-  <h3>Activity Booking</h3>
+<div class="home col-xs-12 col-md-6">
+  <h2>Four Summer's Activity Booking</h2>
   <div>
     <ul>
       <li ng-repeat="activity in scope.activities" ng-click="scope.goToChannel(activity)">
-        <span>{{ activity }}</span>
+        <span>{{ activity | uppercase }}</span>
       </li>
     </ul>
   </div>

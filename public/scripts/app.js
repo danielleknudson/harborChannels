@@ -1,1 +1,1 @@
-var harborChannels = angular.module('harborChannels', ['ngRoute', 'ngMaterial']);
+var harborChannels = angular.module('harborChannels', ['ngRoute', 'mp.datePicker']);

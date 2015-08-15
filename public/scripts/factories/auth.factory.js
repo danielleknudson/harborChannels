@@ -2,8 +2,9 @@
 harborChannels.factory('Auth', [function(){
   return {
     currentUser: {
-      name: 'Kelly User',
-      username: 'kelly',
+      firstName: 'ME',
+      lastName: 'JEAN',
+      username: 'kellyjean',
       imageUrl: "http://api.randomuser.me/portraits/med/women/39.jpg"
     }
   };

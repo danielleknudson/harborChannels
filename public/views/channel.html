@@ -1,13 +1,35 @@
-<div>
-  <a href="/#/">Back to dashboard</a>
+<div class="channel col-xs-12 col-md-6">
+  <a class="link" ng-click="scope.goHome()"><i class="back material-icons">keyboard_arrow_left</i>Back to Activity Booking</a>
   <h1>{{ scope.channel }}</h1>
-  <div>
-    <h4>Other agents in this channel: </h4>
+  <div class="agents">
+    <span>Agents in this channel</span>
     <ul>
-      <li> {{ scope.thisUser.name }}</li>
-      <li ng-repeat="agent in scope.agents">
-        <span>{{ agent }}</span>
+      <li class="agent" ng-repeat="agent in scope.agents | limitTo:10">
+        <img ng-src="{{agent.imageUrl}}" />
+        <p>{{ agent.firstName }}</p>
       </li>
     </ul>
+  </div>
+  <h3>Description</h3>
+  <div class="activity-description">
+    Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Etiam porta sem malesuada magna mollis euismod. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+  </div>
+  <h3>Schedule</h3>
+  <div class="activity-schedule">
+    <p>March - July</p>
+    <p>9 AM - 3 PM</p>
+  </div>
+  <h3>Availability</h3>
+  <div class="activity-availability">
+    <label for="datePicker">Select your reservation date:</label>
+      <date-picker class="date-picker" id="datePicker" ng-model="scope.dateAvailability"></date-picker>
+  </div>
+  <div class="availability-metrics">
+    <p>Group capacity: {{ scope.groupCapacity }}</p>
+    <p>Spots booked: {{ scope.spotsBooked }}</p>
+    <p>Spots available: {{ scope.spotsAvailable }}</p>
+    <div class="booking-bottom">
+      <button class="book-now-btn">Book Now</button>
+    </div>
   </div>
 </div>

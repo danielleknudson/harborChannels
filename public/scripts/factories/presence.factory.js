@@ -25,15 +25,15 @@ harborChannels.factory('Presence', ['$filter', '$http', 'Auth', function ($filte
         url: 'https://randomuser.me/api'
       }).then(function(response){
         var randomUser = response.data.results[0].user;
-        console.log(randomUser);
         var user = {
-          name: capitalize(randomUser.name.first) + ' ' + capitalize(randomUser.name.last),
+          firstName: capitalize(randomUser.name.first),
+          lastName: capitalize(randomUser.name.last),
           username: randomUser.username,
           imageUrl: randomUser.picture.medium
         };
         
         _.forEach(channels, function(channel, channelName){
-          if(Math.random() < 0.75){
+          if(Math.random() < 0.5){
             channel.push(user);
           }
           else if(channel.length > 1){
