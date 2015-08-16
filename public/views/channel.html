@@ -1,15 +1,6 @@
 <div class="channel col-xs-12 col-md-6">
   <a class="link" ng-click="scope.goHome()"><i class="back material-icons">keyboard_arrow_left</i>Back to Activity Booking</a>
-  <h1>{{ scope.channel }}</h1>
-  <div class="agents">
-    <span>Agents in this channel</span>
-    <ul>
-      <li class="agent" ng-repeat="agent in scope.agents | limitTo:10">
-        <img ng-src="{{agent.imageUrl}}" />
-        <p>{{ agent.firstName }}</p>
-      </li>
-    </ul>
-  </div>
+  <ng-presence></ng-presence> 
   <h3>Description</h3>
   <div class="activity-description">
     Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Etiam porta sem malesuada magna mollis euismod. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
