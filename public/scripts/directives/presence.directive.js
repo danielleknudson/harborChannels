@@ -16,6 +16,7 @@ harborChannels.directive('ngPresence', function () {
           ngModel: '='
     },
     controller: ['$scope', '$interval', '$location', 'Presence', function ($scope, $interval, $location, Presence) {
+      console.log(Presence);
       var url = $location.path();
       $scope.scope = {};
       $scope.scope.channel = url.slice(9, url.length);
